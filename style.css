@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: chocolate;
+    border-radius: 10px;
+}
+
+body {
+    background: linear-gradient(to bottom right, #4b2c20, #d9b99b);
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.links li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: brown;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.links li a:hover {
+    color: #d2b48c;
+}
+
+.links li a:hover::after {
+    width: 100%;
+}
+
+.icones {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icone {
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icone:hover {
+    color: #d2b48c;
+    transform: scale(1.2);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 1rem 3rem;
+}
+
+.titleC {
+    padding: 4rem 3rem;
+    text-align: left;
+    max-width: 800px;
+}
+
+.title h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.titleC p {
+    color: #f3f3f3;
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.titleC button {
+    padding: 0.8rem 2rem;
+    background-color: chocolate;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.titleC button:hover {
+    background-color: #a0522d;
+}
+
+
+
+.menu {
+    text-align: center;
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+
+.secprodutos {
+    margin: 2rem 0;
+}
+
+.secprodutos h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #3c3c3c;
+}
+
+.carrossel {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button a {
+    color: inherit; /* Herda a cor do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+
+/* MediaQ para telas pequenas (como smartphones) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+    }
+
+    nav a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+}

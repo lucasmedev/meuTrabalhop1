@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Doce Temporada</title>
+    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+   
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <header>
+            <div class="logo">
+                <img src="imgs/logo.png" width="120" height="55" alt="imagem da Doce Temporada">
+            </div>
+
+            
+            <ul class="links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li> <a href="https://www.instagram.com/docetemporada/" target="_blank">Instagram</a></li>
+                <li><a href="https://g.co/kgs/56rY49c" target="_blank">Localização</a></li>
+                <li><a href="https://wa.me/00000000000" target="_blank">WhatsApp</a></li>
+
+            </ul>
+
+            <div class="icones">
+                <span class="icone"><ion-icon name="cart-outline"></ion-icon></span>
+                <span class="icone"><ion-icon name="search-outline"></ion-icon></span>
+            </div>
+        </header>
+
+        <hr>
+
+        <div class="menu">
+            <h1>Menu</h1>
+            <br><br><br><br>
+           
+            <div class="secprodutos">
+                <h2>Cafés  que temos:</h2><br><br><br><br>
+                <div class="carrossel" id="carrossel1">
+                    <div><h3>Pretinho</h3><img src="imgs/cafe1.jpg" alt="Café 1"></div>
+                    <div><h3>Capuccino</h3><img src="imgs/cafe2.png" alt="Café 2"></div>
+                    <div><h3>Caffé latte</h3><img src="imgs/cafe3.png" alt="Café 3"></div>
+                    <div><h3>Machiatto</h3><img src="imgs/cafe4.png" alt="Café 4"></div>
+                </div>
+            </div>
+                    <br>
+      
+                    
+            <div class="secprodutos">
+                <h2>Nossos Bolos</h2><br><br><br><br>
+                <div class="carrossel" id="carrossel2">
+                    <div><h3>Bolo de Cenoura</h3><img src="imgs/bolo1.jpeg" alt="Bolo 1"></div>
+                    <div><h3>Bolo de Chocolate</h3><img src="imgs/bolo2.jpeg" alt="Bolo 2"></div>
+                    <div><h3>Bolo de Fuba(Broa)</h3><img src="imgs/bolo3.jpeg" alt="Bolo 3"></div>
+                    <div><h3>Bolo Formigueiro</h3><img src="imgs/bolo4.jpeg" alt="Bolo 4"></div>
+                </div>
+            </div>
+                <br>
+
+         
+            <div class="secprodutos">
+                <h2>Doces</h2>
+                <div class="carrossel" id="carrossel3">
+                    <div><h3>Brigadeiro</h3><img src="imgs/doce1.jpeg" alt="Doce 1"></div>
+                    <div><h3>Sonho </h3><img src="imgs/doce2.jpeg" alt="Doce 2"></div>
+                    <div><h3>Sonho de doce de leite</h3><img src="imgs/doce3.jpeg" alt="Doce 3"></div>
+                    <div><h3>Torta de Ninho</h3><img src="imgs/doce4.jpeg" alt="Doce 4"></div>
+                </div>
+            </div>
+                <br>
+
+           
+            <div class="secprodutos">
+                <h2>Bebidas</h2>
+                <div class="carrossel" id="carrossel4">
+                    <div><h3>Chocolate Quente</h3><img src="imgs/bebida1.jpeg" alt="Bebida 1"></div>
+                    <div><h3>Café com Leite Gourmet</h3><img src="imgs/bebida2.jpeg" alt="Bebida 2"></div>
+                    <div><h3>Suco de Laranja</h3><img src="imgs/bebida3.jpeg" alt="Bebida 3"></div>
+                    <div>Chá (escolha do cliente)<h3></h3><img src="imgs/bebida4.jpeg" alt="Bebida 4"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#carrossel1').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: true
+                });
+
+                $('#carrossel2').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: true
+                });
+
+                $('#carrossel3').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: true
+                });
+
+                $('#carrossel4').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: true
+                });
+            });
+        </script>
+
+    </div>
+</body>
+</html>
