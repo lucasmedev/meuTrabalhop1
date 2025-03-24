@@ -185,3 +185,14 @@ button a {
         font-size: 24px; 
     }
 }
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; 
+    }
+
+    h1 {
+        font-size: 20px; /* Ajuste adicional do título para telas muito pequenas */
+    }
+}
+
